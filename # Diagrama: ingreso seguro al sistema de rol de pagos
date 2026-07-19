@@ -1,1 +1,16 @@
-El proceso representa el ingreso de un usuario al sistema de rol de pagos. Primero se valida el login y la contraseña. Si los datos son correctos, el sistema envía un código al teléfono móvil del usuario. Solo después de validar ese código se permite el acceso a la información del rol de pagos.
+# Diagrama: Proceso de entrada y validación de usuario al sistema de rol de pagos
+
+El siguiente diagrama representa el proceso de ingreso seguro al sistema de rol de pagos. Primero, el usuario ingresa su usuario y contraseña. Luego, el sistema valida las credenciales y, si son correctas, envía un código de verificación al teléfono móvil. Finalmente, el usuario ingresa el código recibido y el sistema permite o rechaza el acceso.
+
+![Diagrama de validación de usuario](diagrama-login-2fa.png)
+
+## Descripción del proceso
+
+1. El usuario ingresa su usuario y contraseña.
+2. El sistema valida las credenciales.
+3. Si las credenciales son incorrectas, se muestra un mensaje de error.
+4. Si las credenciales son correctas, se envía un código al teléfono móvil.
+5. El usuario ingresa el código recibido.
+6. El sistema valida el código.
+7. Si el código es correcto, se permite el acceso al sistema de rol de pagos.
+8. Si el código es incorrecto, se solicita un nuevo código.
