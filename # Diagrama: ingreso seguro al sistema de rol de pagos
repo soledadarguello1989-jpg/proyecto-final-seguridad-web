@@ -1,0 +1,1 @@
+El proceso representa el ingreso de un usuario al sistema de rol de pagos. Primero se valida el login y la contraseña. Si los datos son correctos, el sistema envía un código al teléfono móvil del usuario. Solo después de validar ese código se permite el acceso a la información del rol de pagos.
